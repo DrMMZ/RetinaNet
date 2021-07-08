@@ -15,5 +15,5 @@
 `python 3.7.9`, `tensorflow 2.3.1`, `matplotlib 3.3.4`, `numpy 1.19.2`, `opencv 4.5.1`, `scipy 1.6.0`, `scikit-image 0.17.2` and `tensorflow-addons 0.13.0`
 
 ### References
-1. Lin et al., *Focal Loss for Dense Object Detection*, https://arxiv.org/abs/1708.02002
-2. *Mask R-CNN for Object Detection and Segmentation*, https://github.com/matterport/Mask_RCNN
+1. Lin et al., *Focal Loss for Dense Object Detection*, https://arxiv.org/abs/1708.02002, 2018
+2. *Mask R-CNN for Object Detection and Segmentation*, https://github.com/matterport/Mask_RCNN, 2018
