@@ -5,11 +5,27 @@
 1. source code of RetinaNet and its configuration;
 2. source code of data (RetinaNet's inputs) generator using multiple CPU cores; 
 3. source code of utilities such as image/mask preprocessing, augmetation, average precision (AP) metric, visualization and so on;
-4. jupyter notebook demonstration using RetinaNet in training and real-time detection on some datasets. Below are example detections on the [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset randomly selected from un-trained images.
+4. jupyter notebook demonstration using RetinaNet in training and real-time detection on some datasets. 
 
+### Applications
+
+The following are example detections, randomly selected from un-trained images.
+
+1. My own dataset, *empty returns operations (ERO)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds. The dataset (as of July 15 2021) consists of 47 labeled cellphone images, variety of positions. The goal is to count the number of returns, instead of manually checking by human.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/ero_movie.gif" width='360' height='360'/>
+</p> 
+
+2. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO detections above used transfer learning from SKU-110K.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/sku_movie.gif" width='360' height='360'/>
+</p>
+
+3. The [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset, identifying the cells’ nuclei. 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/nuclei_movie.gif" width='360' height='360'/>
 </p> 
+
 
 ### Requirements
 `python 3.7.9`, `tensorflow 2.3.1`, `matplotlib 3.3.4`, `numpy 1.19.2`, `opencv 4.5.1`, `scipy 1.6.0`, `scikit-image 0.17.2` and `tensorflow-addons 0.13.0`
