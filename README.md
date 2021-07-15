@@ -11,12 +11,12 @@
 
 The following are example detections, randomly selected from un-trained images.
 
-1. My own dataset, *empty returns operations (ERO)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds. The dataset (as of July 15 2021) consists of 47 labeled cellphone images, variety of positions. The goal is to count the number of returns, instead of manually checking by human.
+1. My own dataset, *empty returns operations (ERO)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds. The goal is to count the number of returns fast and accurately, instead of manually checking by human (specially for some people like me who is bad on counting). The dataset (as of July 15 2021) consists of 47 labeled cellphone images in cans, variety of positions. If you are interested in contributing to this dataset, please [email](mailto:mmzhangist@gmail.com) me.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/ero_movie.gif" width='360' height='360'/>
 </p> 
 
-2. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO detections above used transfer learning from SKU-110K.
+2. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO detection above used transfer learning from SKU-110K.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/sku_movie.gif" width='360' height='360'/>
 </p>
