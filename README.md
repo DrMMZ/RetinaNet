@@ -2,7 +2,7 @@
 
 [RetinaNet](https://arxiv.org/abs/1708.02002) is an efficient one-stage object detector trained with the focal loss. This repository is a TensorFlow2 implementation of RetinaNet and its applications, aiming for creating a tool in object detection task that can be easily extended to other datasets or used in building projects. It includes
 
-1. source code of RetinaNet and its configuration;
+1. source code of RetinaNet and its configuration (multiple GPUs training and detecting);
 2. source code of data (RetinaNet's inputs) generator using multiple CPU cores; 
 3. source code of utilities such as image/mask preprocessing, augmetation, average precision (AP) metric, visualization and so on;
 4. jupyter notebook demonstration using RetinaNet in training and real-time detection on some datasets. 
