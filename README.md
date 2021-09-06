@@ -9,19 +9,33 @@
 
 ### Applications
 
-The following are example detections, randomly selected from un-trained images.
+The following are example detections.
 
-1. My own dataset, *empty returns operations (ERO-CA)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds in Canada. The goal is to count the number of returns fast and accurately, instead of manually checking by human (specially for some people like me who is bad on counting). The dataset (as of July 15 2021) consists of 47 labeled cellphone images in cans, variety of positions. If you are interested in contributing to this dataset or project, please [email](mailto:mmzhangist@gmail.com) me.
+1. Video detection in human faces: 
+
+https://user-images.githubusercontent.com/38026940/132159211-6951ba51-9d59-4d38-b13e-259504195ebc.mp4
+
+Scenes are taken from *The Bourne Ultimatum (2007 film)* and the cover page is from *The Bourne Identity (2002 film)*. It was trained on the [wider face](http://shuoyang1213.me/WIDERFACE/) dataset. 
+
+Moveover, it can be used to recognize Jason Bourne. See [ProtoNet for Few-Shot Learning in TensorFlow2 and Applications](https://github.com/DrMMZ/ProtoNet) for details.
+
+https://user-images.githubusercontent.com/38026940/132160401-ee1f22ca-0b0f-4471-8b62-6144c76cf21c.mp4
+
+
+
+2. My own dataset, *empty returns operations (ERO-CA)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds in Canada. The goal is to count the number of returns fast and accurately, instead of manually checking by human (specially for some people like me who is bad on counting). The dataset (as of July 15 2021) consists of 47 labeled cellphone images in cans, variety of positions. If you are interested in contributing to this dataset or project, please [email](mailto:mmzhangist@gmail.com) me.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/ero_movie.gif" width='360' height='360'/>
 </p> 
 
-2. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO-CA detection above used transfer learning from SKU-110K.
+
+3. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO-CA detection above used transfer learning from SKU-110K.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/sku_movie.gif" width='360' height='360'/>
 </p>
 
-3. The [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset, identifying the cells’ nuclei. 
+
+4. The [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset, identifying the cells’ nuclei. 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/nuclei_movie.gif" width='360' height='360'/>
 </p> 
