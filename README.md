@@ -7,11 +7,27 @@
 3. source code of utilities such as image/mask preprocessing, augmetation, average precision (AP) metric, visualization and so on;
 4. jupyter notebook demonstration using RetinaNet in training and real-time detection on some datasets. 
 
+
+### Updates
+1. 10/2/2021: Solve OOM problem when inferencing by fixing resnet_fpn.compute_fmap().
+
 ### Applications
 
 The following are example detections.
 
-1. Video detection in human faces: 
+1. [The Global Wheat Challenge 2021](https://www.aicrowd.com/challenges/global-wheat-challenge-2021) is a detection and counting challenge of wheat head. By using this implementation, we are able to achieve the following result (evaluated on the test set used for competition submission):
+
+|detection time (second per image)| evaluation metric (ADA)|
+|---|---|
+|0.11|0.446|
+
+where the evaluation metric ADA is Average Domain Accuracy defined in [here](https://www.aicrowd.com/challenges/global-wheat-challenge-2021#evaluation-criteria). 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/wheat_movie.gif" width='360' height='360'/>
+</p>
+
+
+2. Video detection in human faces: 
 
 https://user-images.githubusercontent.com/38026940/132159211-6951ba51-9d59-4d38-b13e-259504195ebc.mp4
 
@@ -22,20 +38,19 @@ Moveover, it can be used to recognize Jason Bourne. See [ProtoNet for Few-Shot L
 https://user-images.githubusercontent.com/38026940/132160401-ee1f22ca-0b0f-4471-8b62-6144c76cf21c.mp4
 
 
-
-2. My own dataset, *empty returns operations (ERO-CA)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds in Canada. The goal is to count the number of returns fast and accurately, instead of manually checking by human (specially for some people like me who is bad on counting). The dataset (as of July 15 2021) consists of 47 labeled cellphone images in cans, variety of positions. If you are interested in contributing to this dataset or project, please [email](mailto:mmzhangist@gmail.com) me.
+3. My own dataset, *empty returns operations (ERO-CA)*, is a collection of images such that each contains empty beer, wine and liquor cans or bottles in densely packed scenes that can be returned for refunds in Canada. The goal is to count the number of returns fast and accurately, instead of manually checking by human (specially for some people like me who is bad on counting). The dataset (as of July 15 2021) consists of 47 labeled cellphone images in cans, variety of positions. If you are interested in contributing to this dataset or project, please [email](mailto:mmzhangist@gmail.com) me.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/ero_movie.gif" width='360' height='360'/>
 </p> 
 
 
-3. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO-CA detection above used transfer learning from SKU-110K.
+4. The [SKU-110K](https://github.com/eg4000/SKU110K_CVPR19) dataset, focusing on detection in densely packed scenes. Indeed, our ERO-CA detection above used transfer learning from SKU-110K.
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/sku_movie.gif" width='360' height='360'/>
 </p>
 
 
-4. The [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset, identifying the cells’ nuclei. 
+5. The [nuclei](https://www.kaggle.com/c/data-science-bowl-2018) dataset, identifying the cells’ nuclei. 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DrMMZ/drmmz.github.io/master/images/nuclei_movie.gif" width='360' height='360'/>
 </p> 
