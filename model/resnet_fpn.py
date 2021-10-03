@@ -69,17 +69,20 @@ def compute_fmap(image_shape):
     """
     assert image_shape[0] >= 128 and image_shape[1] >= 128, \
         'Image size is too small to compute. One needs at least 128.'
-        
-    inputs = tf.keras.Input(shape=image_shape)
-    
-    # note that channels_fmap is fixed to 256
-    outputs = resnet_fpn(inputs)
     
     fmap_sizes = []
-    for i in range(len(outputs)):
-        fmap_shape = outputs[i].shape[1:]
-        #fmap_shapes.append(fmap_shape)
-        height, width, channels = fmap_shape
-        fmap_sizes.append((height, width))
+    # sizes in P3, P4, P5
+    for i in range(3, 6):
+        stride = 2**i
+        fmap_h = int(image_shape[0] / stride)
+        fmap_w = int(image_shape[1] / stride)
+        fmap_size = (fmap_h, fmap_w)
+        fmap_sizes.append(fmap_size)
+    # sizes in P6, P7
+    for i in range(2):
+        fmap_h = int((fmap_h-3) / 2) + 1
+        fmap_w = int((fmap_w-3) / 2) + 1
+        fmap_size = (fmap_h, fmap_w)
+        fmap_sizes.append(fmap_size)
         
     return fmap_sizes
