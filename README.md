@@ -17,7 +17,7 @@ The following are example detections.
 
 * [The Global Wheat Challenge 2021](https://www.aicrowd.com/challenges/global-wheat-challenge-2021) is a detection and counting challenge of wheat head. By using this implementation and trained only on the given training set, we are able to achieve the following result (evaluated on the test set used for competition submission):
 
-|detection time (second per image)| evaluation metric (ADA)|
+|detection time in GPU (second per image)| evaluation metric (ADA)|
 |---|---|
 |0.11|0.446|
 
