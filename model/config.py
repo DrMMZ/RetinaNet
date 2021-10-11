@@ -82,6 +82,10 @@ class Config(object):
     num_val_images = None # number of validation images 
     
     def __init__(self):
+        assert self.shortest_side % 128 == 0, \
+            'Shortest side must be a multiple of 128.'
+        assert self.longest_side % 128 == 0, \
+            'Longest side must be a multiple of 128.'
         # image shape
         if self.resize_mode == 'crop':
             self.image_shape = (self.shortest_side, self.shortest_side, 3)
