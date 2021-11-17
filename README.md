@@ -19,7 +19,7 @@ The following are example detections.
 
 |GPU| size| detection time (second per image)| evaluation metric (ADA)|
 |---|---|---|---|
-|GeForce RTX 2070 SUPER|1024x1024|0.11|0.446|
+|GeForce RTX 2070 SUPER|1024x1024|0.11|0.478|
 
 where the evaluation metric ADA is Average Domain Accuracy defined in [here](https://www.aicrowd.com/challenges/global-wheat-challenge-2021#evaluation-criteria). 
 <p align="center">
