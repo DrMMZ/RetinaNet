@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/38026940/132159211-6951ba51-9d59-4d38-
 
 Scenes are taken from *The Bourne Ultimatum (2007 film)* and the cover page is from *The Bourne Identity (2002 film)*. It was trained on the [wider face](http://shuoyang1213.me/WIDERFACE/) dataset. 
 
-Moveover, it can be used to recognize Jason Bourne. See [ProtoNet for Few-Shot Learning in TensorFlow2 and Applications](https://github.com/DrMMZ/ProtoNet) for details.
+Moveover, it can be used to recognize Jason Bourne. See the next video and [ProtoNet for Few-Shot Learning in TensorFlow2 and Applications](https://github.com/DrMMZ/ProtoNet) for details.
 
 https://user-images.githubusercontent.com/38026940/132160401-ee1f22ca-0b0f-4471-8b62-6144c76cf21c.mp4
 
