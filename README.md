@@ -9,6 +9,7 @@
 
 
 ### Updates
+* soon/2022: Will have an update to clean up some mess and provide a tutorial on how to generate a customized dataset and then train.
 * 10/2/2021: Solve OOM problem when inferencing by fixing resnet_fpn.compute_fmap().
 
 ### Applications
